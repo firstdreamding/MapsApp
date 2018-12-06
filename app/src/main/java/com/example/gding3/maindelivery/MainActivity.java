@@ -20,6 +20,10 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new BlankFragment()).commit();
     }
 
+    private void killActivity() {
+        finish();
+    }
+
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
@@ -28,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
                     switch(menuItem.getItemId()) {
                         case R.id.back:
-                            finishActivity(0);
+                            killActivity();
                             break;
                         case R.id.order:
                             selectedFragment = new BlankFragment();

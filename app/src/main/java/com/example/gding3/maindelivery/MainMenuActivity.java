@@ -18,10 +18,17 @@ public class MainMenuActivity extends AppCompatActivity {
 
     private void configureNextButton() {
         Button nextButton = (Button) findViewById(R.id.deliveryDashboard);
+        Button otherNextButton = (Button) findViewById(R.id.recipeDashboard);
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainMenuActivity.this, MainActivity.class));
+            }
+        });
+        otherNextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainMenuActivity.this, RecipeDashboardActivity.class));
             }
         });
 
