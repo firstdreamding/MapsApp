@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FFC107</color>
+    <color name="colorPrimary">#ffc107</color>
     <color name="colorPrimaryDark">#FFA000</color>
     <color name="backgroundColor">#fcfcfc</color>
     <color name="lightGrayLine">#ededed</color>
@@ -9,4 +9,6 @@
     <color name="materialGreen">#00bfa5</color>
     <color name="pinkAccent">#ff4081</color>
     <color name="colorAccent">#ffcc99</color>
+    <color name="lightOrange">#FFCC99</color>
+    <color name="brownOrange">#CC6600</color>
 </resources>
