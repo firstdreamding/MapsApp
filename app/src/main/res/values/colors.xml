@@ -11,4 +11,5 @@
     <color name="colorAccent">#ffcc99</color>
     <color name="lightOrange">#FFCC99</color>
     <color name="brownOrange">#CC6600</color>
+    <color name="red">#FF0000</color>
 </resources>
