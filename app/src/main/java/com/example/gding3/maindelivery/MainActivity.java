@@ -1,6 +1,5 @@
 package com.example.gding3.maindelivery;
 
-import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
@@ -17,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         BottomNavigationView bottomNav = findViewById(R.id.bottom_delivery_bar);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new BlankFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new OrderFrag()).commit();
     }
 
     private void killActivity() {
@@ -32,10 +31,10 @@ public class MainActivity extends AppCompatActivity {
 
                     switch(menuItem.getItemId()) {
                         case R.id.back:
-                            killActivity();
+                            selectedFragment = new BackFrag();
                             break;
                         case R.id.order:
-                            selectedFragment = new BlankFragment();
+                            selectedFragment = new OrderFrag();
                             break;
                         case R.id.deliver:
                             selectedFragment = new DeliverFrag();
