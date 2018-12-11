@@ -65,5 +65,6 @@
     <array name="entryvalues_list_preference"></array>
     <string name="title_first_section"></string>
 
+    <string name="recipes_catagory_list">recipes catagory</string>
 
 </resources>

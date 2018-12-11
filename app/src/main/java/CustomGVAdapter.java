@@ -15,10 +15,10 @@ public class CustomGVAdapter extends BaseAdapter {
     Context context;
     int [] imageId;
     private static LayoutInflater inflater=null;
-    public CustomGVAdapter(BrowseRecipesActivity mainActivity, String[] NameList, int[] Images) {
+    public CustomGVAdapter(BrowseRecipesActivity mainActivity, String[] names, int[] Images) {
         // TODO Auto-generated constructor stub
-        result=NameList;
-        //context=;
+        result=names;
+        context=mainActivity;
         imageId=Images;
         inflater = ( LayoutInflater )context.
                 getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -55,8 +55,8 @@ public class CustomGVAdapter extends BaseAdapter {
         View rowView;
 
         rowView = inflater.inflate(R.layout.grid_layout_browse, null);
-        holder.textView =(TextView) rowView.findViewById(R.id.text);
-        holder.imageView =(ImageView) rowView.findViewById(R.id.images);
+        holder.textView =rowView.findViewById(R.id.text);
+        holder.imageView =rowView.findViewById(R.id.images);
 
         holder.textView.setText(result[position]);
         holder.imageView.setImageResource(imageId[position]);
@@ -72,6 +72,7 @@ public class CustomGVAdapter extends BaseAdapter {
 
         return rowView;
     }
+
 
 }
 
