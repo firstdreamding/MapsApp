@@ -21,13 +21,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
-
-
-
-
-
-
 public class MainDrawerActivity extends AppCompatActivity {
     private NavigationView navigationView;
     private DrawerLayout drawer;
@@ -64,6 +57,7 @@ public class MainDrawerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstancesState) {
         super.onCreate(savedInstancesState);
         setContentView(R.layout.menu_drawer);
+
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
