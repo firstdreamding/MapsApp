@@ -69,7 +69,7 @@ public class MainDrawerActivity extends AppCompatActivity {
 
         mHandler = new Handler();
 
-        drawer = findViewById(R.id.drawerLayout);
+        drawer = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
         fab = findViewById(R.id.fab);
 

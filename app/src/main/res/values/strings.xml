@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MainDelivery</string>
+    <string name="app_name">FoodCall</string>
     <string name="title_activity_maps">Map</string>
 
     <!-- TODO: Remove or change this placeholder text -->
@@ -23,6 +23,8 @@
 
     <string name="action_mark_all_read">Mark All as Read</string>
     <string name="action_logout">Logout</string>
+    <string name="account_type">Account Type</string>
+
 
 
 </resources>
