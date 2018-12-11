@@ -11,7 +11,8 @@
         android:forceHasOverlappingRendering="false"
         android:padding="1dp"
         android:numColumns="1"
-        android:id="@+id/browseRecipesGridView"/>
+        android:id="@+id/browseRecipesGridView"
+        android:background="@color/colorPrimary"/>
 
 
 
