@@ -11,12 +11,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:translationY="100dp"
-            android:text="Button" />
+            android:text="Recipe Dashboard"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            />
 
         <Button
             android:id="@+id/deliveryDashboard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Deliver" />
+            android:text="Deliver"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+        <include
+            layout="@layout/menu_drawer"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"/>
 
 </RelativeLayout>

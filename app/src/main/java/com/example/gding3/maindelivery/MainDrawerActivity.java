@@ -166,20 +166,20 @@ public class MainDrawerActivity extends AppCompatActivity {
         switch (navItemIndex) {
             case 0:
                 //home
-                //HomeFragment = new HomeFragment();
-               // return homeFragment;
+                HomeFragment homeFragment = new HomeFragment();
+                return homeFragment;
             case 1:
                 //my account
-                //MyAccountFragment = new myAccountFragment();
-                //return myAccountFragment;
+                MyAccountFragment myAccountFragment= new MyAccountFragment();
+                return myAccountFragment;
             case 2:
                 //favourites
-                //FavouritesFragment = new favouritesFragment();
-                //return favouritesFragment;
+                FavouritesFragment favouritesFragment = new FavouritesFragment();
+                return favouritesFragment;
             case 3:
                 //settings
-                //SettingsFragment settingsFragment = new settingsFragment();
-                //return settingsFragment;
+                SettingsFragment settingsFragment = new SettingsFragment();
+                return settingsFragment;
             default:
                 return new Fragment();
         }
@@ -209,10 +209,10 @@ public class MainDrawerActivity extends AppCompatActivity {
                 //Check to see which item was being clicked and perform appropriate action
                 switch (menuItem.getItemId()) {
                     //Replacing the main content with ContentFragment Which is our Inbox View;
-                    //case R.id.nav_home:
-                      //  navItemIndex = 0;
-                        //CURRENT_TAG = TAG_HOME;
-                        //break;
+                    case R.id.nav_home:
+                        navItemIndex = 0;
+                        CURRENT_TAG = TAG_HOME;
+                        break;
                     case R.id.nav_account:
                         navItemIndex = 1;
                         CURRENT_TAG = TAG_MY_ACCOUNT;

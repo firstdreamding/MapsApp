@@ -25,6 +25,45 @@
     <string name="action_logout">Logout</string>
     <string name="account_type">Account Type</string>
 
+    <!-- strings used in the settings page -->
+    <string name="pref_send_report">Send crash reports</string>
+    <string name="pref_send_report_summary">Helps to fix bugs</string>
+    <string name="pref_sync_frequency">Sync frequency</string>
+    <string name="pref_sync_frequency_summary">Set the sync frequency</string>
+    <string name="pref_user_name">Set username</string>
+    <string name="pref_user_name_summary">Set your username</string>
+
+    <string name="pref_user_profile">User Profile</string>
+    <string name="pref_update_setting">Update Settings</string>
+    android:title="@string/title_first_section">
+
+
+        <string name="checkbox_preference"></string>
+        <string name="title_checkbox_preference"></string>
+        <string name="default_checkbox_preference"></string>
+
+
+        <string name="edittext_preference"></string>
+        <string name="title_edittext_preference"></string>
+    <string name="summary_edittext_preference"></string>
+        <string name="dialog_title_edittext_preference"></string>
+
+
+
+
+
+    <string name="list_preference"></string>
+    <string name="title_list_preference"></string>
+    <string name="dialog_title_list_preference"></string>
+    <string name="entries_list_preference"></string>
+    <string name="entryvalues_list_preference"></string>
+
+
+    <string name="title_intent_preference"></string>
+    <string name="title_second_section"></string>
+    <array name="entries_list_preference"></array>
+    <array name="entryvalues_list_preference"></array>
+    <string name="title_first_section"></string>
 
 
 </resources>
