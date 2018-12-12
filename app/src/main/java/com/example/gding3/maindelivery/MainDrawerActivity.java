@@ -66,7 +66,6 @@ public class MainDrawerActivity extends AppCompatActivity {
 
         drawer = findViewById(R.id.MyMenuDrawer);
         navigationView = findViewById(R.id.nav_view);
-        fab = findViewById(R.id.fab);
 
 
         //Navigation view header

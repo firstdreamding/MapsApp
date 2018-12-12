@@ -19,5 +19,13 @@ public class RecipeDashboardActivity extends AppCompatActivity {
                 startActivity(new Intent(RecipeDashboardActivity.this, RecipeSend.class));
             }
         });
+
+        Button nextButton2 = (Button) findViewById(R.id.browserecipes);
+        nextButton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RecipeDashboardActivity.this, RecipeView.class));
+            }
+        });
     }
 }

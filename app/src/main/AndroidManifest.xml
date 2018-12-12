@@ -47,6 +47,7 @@
             android:name="org.apache.http.legacy"
             android:required="false" />
         <activity android:name=".RecipeSend"></activity>
+        <activity android:name=".RecipeView"></activity>
     </application>
 
 </manifest>

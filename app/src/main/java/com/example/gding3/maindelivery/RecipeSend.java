@@ -52,6 +52,8 @@ public class RecipeSend extends AppCompatActivity {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+
+                finish();
             }
         });
 
