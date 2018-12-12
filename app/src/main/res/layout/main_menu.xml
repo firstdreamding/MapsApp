@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainMenuActivity">
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="100dp"
+    android:orientation="vertical" >
 
 
         <Button
             android:id="@+id/recipeDashboard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:translationY="100dp"
             android:text="Recipe Dashboard"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold"
@@ -28,4 +28,4 @@
 
         
 
-</RelativeLayout>
+</LinearLayout>

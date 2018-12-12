@@ -17,20 +17,6 @@
         android:layout_height="match_parent" />
 
 
-    <!-- Layout to contain contents of main body of screen (drawer will slide over this) -->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="130dp"
-            android:layout_marginTop="200dp"
-            android:textSize="50dp" />
-    </RelativeLayout>
-
     <!--<android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"

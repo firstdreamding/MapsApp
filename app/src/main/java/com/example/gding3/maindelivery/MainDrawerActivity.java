@@ -77,15 +77,6 @@ public class MainDrawerActivity extends AppCompatActivity {
 
         //load toolbar titles from string resources
         activityTitles = getResources().getStringArray(R.array.navi_itm_activity_titles);
-
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own actiview", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
         //load nav menu header data
         loadNavHeader();
 
@@ -93,11 +84,6 @@ public class MainDrawerActivity extends AppCompatActivity {
         //intializing navi menu
         setUpNavigationView();
 
-        if (savedInstancesState == null) {
-            navItemIndex = 0;
-            CURRENT_TAG = TAG_HOME;
-            loadHomeFragment();
-        }
     }
 
     // load navi menu header info
