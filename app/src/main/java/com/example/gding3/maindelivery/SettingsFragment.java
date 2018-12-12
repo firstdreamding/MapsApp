@@ -14,4 +14,7 @@ public class SettingsFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.main_menu, container, false);
     }
+
+    public interface OnFragmentInteractionListener {
+    }
 }

@@ -8,13 +8,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class MyAccountFragment extends Fragment {
+public class NotificationFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.activity_my_account, container, false);
+        return inflater.inflate(R.layout.main_menu, container, false);
     }
 
-    public interface OnFragmentInteractionListener {
-    }
+
 }
