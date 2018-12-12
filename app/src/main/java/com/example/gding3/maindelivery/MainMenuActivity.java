@@ -2,6 +2,7 @@ package com.example.gding3.maindelivery;
 
 import android.content.Context;
 import android.content.Intent;
+import android.media.Image;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -16,6 +17,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import android.widget.ImageButton;
 import android.widget.Toolbar;
 
 
@@ -36,8 +38,8 @@ public class MainMenuActivity extends MainDrawerActivity implements NavigationVi
     }
 
     private void configureNextButton() {
-        Button nextButton = (Button) findViewById(R.id.deliveryDashboard);
-        Button otherNextButton = (Button) findViewById(R.id.recipeDashboard);
+        ImageButton nextButton = (ImageButton) findViewById(R.id.deliveryDashboard);
+        ImageButton otherNextButton = (ImageButton) findViewById(R.id.recipeDashboard);
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

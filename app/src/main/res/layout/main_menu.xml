@@ -5,25 +5,28 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="100dp"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
 
 
-        <Button
+        <ImageButton
             android:id="@+id/recipeDashboard"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:src="@mipmap/cookinglogo"
             android:text="Recipe Dashboard"
             android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
-        <Button
+        <ImageButton
             android:id="@+id/deliveryDashboard"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
             android:text="Deliver"
             android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:src="@mipmap/delieverylogo"/>
+
 
 
         
