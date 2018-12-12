@@ -83,7 +83,6 @@ public class MainDrawerActivity extends AppCompatActivity {
 
         //intializing navi menu
         setUpNavigationView();
-
     }
 
     // load navi menu header info
