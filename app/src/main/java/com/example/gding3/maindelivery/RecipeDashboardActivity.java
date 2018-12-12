@@ -12,5 +12,12 @@ public class RecipeDashboardActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        Button nextButton = (Button) findViewById(R.id.addRecipeButton);
+        nextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RecipeDashboardActivity.this, RecipeSend.class));
+            }
+        });
     }
 }

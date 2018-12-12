@@ -38,18 +38,15 @@
     android:title="@string/title_first_section">
 
 
-        <string name="checkbox_preference"></string>
-        <string name="title_checkbox_preference"></string>
-        <string name="default_checkbox_preference"></string>
+    <string name="checkbox_preference"></string>
+    <string name="title_checkbox_preference"></string>
+    <string name="default_checkbox_preference"></string>
 
 
-        <string name="edittext_preference"></string>
-        <string name="title_edittext_preference"></string>
+    <string name="edittext_preference"></string>
+    <string name="title_edittext_preference"></string>
     <string name="summary_edittext_preference"></string>
-        <string name="dialog_title_edittext_preference"></string>
-
-
-
+    <string name="dialog_title_edittext_preference"></string>
 
 
     <string name="list_preference"></string>

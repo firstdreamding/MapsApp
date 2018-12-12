@@ -21,12 +21,21 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:gravity="center">
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:background="@drawable/circlebackgroundpurple"
-                    android:src="@drawable/ic_add_black_24dp"
-                    android:padding="10dp" />
+
+                <FrameLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button android:id="@+id/addRecipeButton"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@android:color/transparent"/>
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+
+                        android:background="@drawable/circlebackgroundpurple"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_add_black_24dp" />
+                </FrameLayout>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
