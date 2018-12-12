@@ -1,5 +1,6 @@
 package com.example.gding3.maindelivery;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
@@ -17,13 +18,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainDrawerActivity extends AppCompatActivity {
     private NavigationView navigationView;
-    private DrawerLayout drawer;
+    protected DrawerLayout drawer;
     private View navHeader;
     private Toolbar toolbar;
     private FloatingActionButton fab;
@@ -57,13 +59,12 @@ public class MainDrawerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstancesState) {
         super.onCreate(savedInstancesState);
         setContentView(R.layout.menu_drawer);
-
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         mHandler = new Handler();
 
-        drawer = findViewById(R.id.drawer_layout);
+        drawer = findViewById(R.id.MyMenuDrawer);
         navigationView = findViewById(R.id.nav_view);
         fab = findViewById(R.id.fab);
 

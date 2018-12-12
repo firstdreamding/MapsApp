@@ -1,5 +1,6 @@
 package com.example.gding3.maindelivery;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -10,6 +11,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -17,7 +19,7 @@ import android.widget.Button;
 import android.widget.Toolbar;
 
 
-public class MainMenuActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class MainMenuActivity extends MainDrawerActivity implements NavigationView.OnNavigationItemSelectedListener {
 
 
 
@@ -25,30 +27,12 @@ public class MainMenuActivity extends AppCompatActivity implements NavigationVie
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_menu);
-
-
-
+        LayoutInflater inflater = (LayoutInflater) this
+                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View contentView = inflater.inflate(R.layout.main_menu, null, false);
+        drawer.addView(contentView, 0);
         configureNextButton();
-
-
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer,  R.string.openDrawer, R.string.closeDrawer);
-        drawer.addDrawerListener(toggle);
-        toggle.syncState();
-
-        NavigationView navigationView = findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
-        //check first item in the navigation
-        navigationView.setCheckedItem(R.id.nav_account);
-        //open myaccount frag initially
-        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        ft.replace(R.id.account_setting_page, new MyAccountFragment());
-        ft.commit();
     }
 
     private void configureNextButton() {
