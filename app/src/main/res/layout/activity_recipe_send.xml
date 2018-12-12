@@ -27,7 +27,8 @@
         android:layout_weight="1"
         android:gravity="top"
         android:hint="Recipe"
-        android:inputType="textAutoCorrect|textMultiLine" />
+        android:inputType="textAutoCorrect|textMultiLine"
+        android:selectAllOnFocus="false" />
 
     <Button
         android:id="@+id/submitrecipe"

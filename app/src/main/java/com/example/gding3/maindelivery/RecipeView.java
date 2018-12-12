@@ -76,14 +76,14 @@ public class RecipeView extends AppCompatActivity {
                             JSONObject row = array.getJSONObject(i);
                             final String recipe = row.getString("recipetext");
                             final String name = row.getString("title");
+                            final LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
+                                    LinearLayout.LayoutParams.FILL_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+                            lp.setMargins(25,25,25,25);
                             RecipeView.this.runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
                                     final LinearLayout test = new LinearLayout(RecipeView.this);
                                     test.setOrientation(LinearLayout.VERTICAL);
-                                    LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
-                                            LinearLayout.LayoutParams.FILL_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-                                    lp.setMargins(25,25,25,25);
                                     test.setLayoutParams(lp);
                                     TextView title = new TextView(RecipeView.this);
                                     title.setText(name);
