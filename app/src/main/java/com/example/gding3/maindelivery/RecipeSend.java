@@ -3,6 +3,8 @@ package com.example.gding3.maindelivery;
 import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -25,6 +27,8 @@ public class RecipeSend extends AppCompatActivity {
     EditText title;
     EditText recipetext;
     Button submitButton;
+    private boolean isReached = false;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe_send);
